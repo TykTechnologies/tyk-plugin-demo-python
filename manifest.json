@@ -10,10 +10,6 @@
       }
     ],
     "post": [
-      {
-        "name": "MyPostMiddleware",
-        "require_session": false
-      }
     ],
     "driver": "python"
   },
