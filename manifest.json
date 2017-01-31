@@ -11,6 +11,9 @@
     ],
     "post": [
     ],
+    "auth_check": {
+      "name": "MyAuthMiddleware"
+    },
     "driver": "python"
   },
   "checksum": "the_checksum",
