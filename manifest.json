@@ -1,21 +1,11 @@
 {
-  "file_list": [
-    "mymiddleware.py"
-  ],
-  "custom_middleware": {
-    "pre": [
-      {
-        "name": "MyPreMiddleware",
-        "require_session": false
-      }
+    "file_list": [
+        "middleware.py"
     ],
-    "post": [
-    ],
-    "auth_check": {
-      "name": "MyAuthMiddleware"
-    },
-    "driver": "python"
-  },
-  "checksum": "the_checksum",
-  "signature": "the_signature"
+    "custom_middleware": {
+        "driver": "python",
+        "auth_check": {
+            "name": "MyAuthMiddleware"
+        }
+    }
 }

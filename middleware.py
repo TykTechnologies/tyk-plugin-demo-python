@@ -2,11 +2,6 @@ from tyk.decorators import *
 from gateway import TykGateway as tyk
 
 @Hook
-def MyPreMiddleware(request, session, spec):
-    request.add_header('myheader', 'myvalue')
-    return request, session
-
-@Hook
 def MyAuthMiddleware(request, session, metadata, spec):
     auth_header = request.get_header('Authorization')
     if auth_header == '47a0c79c427728b3df4af62b9228c8ae':
