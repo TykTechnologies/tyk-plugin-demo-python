@@ -4,8 +4,10 @@
     ],
     "custom_middleware": {
         "driver": "python",
-        "auth_check": {
+        "auth_check": [
+            {
             "name": "MyAuthMiddleware"
-        }
+            }
+        ]
     }
 }
