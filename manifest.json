@@ -3,9 +3,36 @@
         "middleware.py"
     ],
     "custom_middleware": {
-        "driver": "python",
+        "pre": [
+            {
+                "name": "PreHook"
+            }
+        ],
+        "post": [
+            {
+                "name": "PostHook"
+            }
+        ],
+        "post_key_auth": [
+            {
+                "name": "PostKeyAuth"
+            }
+        ],
+        "response": [
+            {
+                "name": "ResponseHook"
+            }
+        ],
         "auth_check": {
-            "name": "MyAuthMiddleware"
+            "name": "AuthCheck"
+        },
+        "driver": "python",
+        "id_extractor": {
+            "extract_from": "header",
+            "extract_with": "value",
+            "extractor_config": {
+                "header_name": "Authorization"
+            }
         }
     }
 }
